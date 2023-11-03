@@ -1,0 +1,53 @@
+.owl-carousel .item{
+ /* border: 1px solid black; */
+ font-size: 24px;
+ text-align: center;
+ margin-top: 20px;;
+}
+.owl-carousel .item img{
+    /* border: 1px solid black; */
+    object-fit: contain;
+   }
+
+.carousel-item img{
+max-height: 530px;
+width: 100%;
+min-height: 180px;
+}
+
+.search-image img
+{
+    height: 250px;
+    object-fit: contain;
+}
+.f-logo
+{
+    height: 40px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.owl-next{
+ float:right;
+}
+.owl-prev{
+ float:left;
+}
+.owl-prev span{
+ font-size: 24px;
+ font-weight: bold;
+}
+.owl-next span{
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.base-logo
+{
+height: 40px;
+width: 250px;
+}
+
+.bg-laptop-bazar
+{
+    background-color: rgb(105, 43, 252);
+}

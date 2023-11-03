@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Laptops{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+  <div class="col-sm-12">
+   <div class="row">
+    {% for product in search %}
+     <div class="col-sm-3 text-center mb-3 mx-2 shadow">
+      <a href="{% url 'product-detail' product.id %}" class="btn">
+       <div class="item">
+        <div class="search-image">
+        <img src="{{product.product_image.url}}" alt=""  class="img-fluid">
+        </div>
+        <div class="fw-bold">{{product.title}}</div>
+        <div class="fw-bold">Rs. {{product.discounted_price}} <small class="fw-bold text-danger text-decoration-line-through">{{product.selling_price}}</small></div>
+       </div>
+      </a>
+     </div>
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
